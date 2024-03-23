@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    if search in my_list:
-        ind = my_list.index(search)
-    for i in my_list:
+    li = my_list.copy()
+    if search in li:
+        ind = li.index(search)
+    for i in li:
         if ind == i:
-            my_list[ind] = replace
-    return my_list
+            li[ind] = replace
+    return li
   
 
   
